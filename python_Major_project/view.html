@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles and apply a basic styling */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header, main, footer {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+    }
+    header nav{
+      display: flex;
+    }
+    header nav a{
+      color:white;
+      text-decoration: none;
+      margin-left:20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .product { 
+     
+      margin: 30px;
+      display: flex; 
+      background-color: white;
+      padding: 20px;
+
+    }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+    }
+    .product img {
+      width: 80%; /* Adjust the image size as needed */
+      height: auto;
+      margin-right: 20px; /* Add spacing between image and details */
+    }
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;/* Take up remaining space beside the image */
+    }
+    .product .price {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .cart-button {
+      background-color: #2ecc71;
+    }
+    .buy-button{
+      background-color: rgb(247,232,73);
+    }
+
+  </style>
+  <title>E-commerce Website</title>
+</head>
+<body>
+  <header>
+    <h1>E-commerce Store</h1>
+    <div>    
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+        </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="product">
+      <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwb3J0cyUyMHNob2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+      <div class="product-details">
+        <h2>Adidas White Sneakers</h2>
+        <p>Elevate your casual style with our pristine white sneakers. Designed for both comfort and fashion, these sneakers feature a timeless white canvas that effortlessly complements any outfit. The sleek and versatile design is perfect for daily wear, while the cushioned sole ensures all-day comfort. Step into a pair of our white sneakers and step up your fashion game.</p>
+        <p style="font-size: 50x"class="price">Price: Rs- 3349/-</p>
+        <p style="font-size: 25px"class="size">Size: 7, 8, 9, 10</p>
+         <button class="cart-button" style="font-size: 30px; border-radius: 10px;">Add to Cart</button>
+            <button style="font-size: 30px; background-color: rgb(247, 232, 73); border-radius: 10px;">Buy Now</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 E-commerce Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

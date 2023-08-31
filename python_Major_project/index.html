@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header nav {
+            display: flex;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: calc(30% - 40px);
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        .product .price {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>E-Commerce Store</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+        </nav>
+    </header>
+    <div class="container">
+       
+        <div class="product">
+            <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwb3J0cyUyMHNob2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Product 2">
+            <h3>white sneaker</h3>
+            <p>"Classic white sneakers, a versatile wardrobe essential...."</p>
+            <p class="price">Rs-279</p>
+        <a href="file:///D:/pythonMproject/view.html">
+            <button style="background-color: #24a0ed; color: white; font-size: 16px;">View</button>
+        </a>
+            <button style="background-color:green; color: white; font-size: 16px;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1641893843833-a006778dc00b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGZvcm1hbCUyMHNob2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Product 3">
+            <h3>Formal Shoes</h3>
+            <p>A formal shoe exudes timeless elegance, crafted with meticulous attention to detail and premium materials, perfectly complementing sophisticated attire for professional or special occasions.</p>
+            <p class="price">Rs-309</p>
+            <button style="background-color: #24a0ed; color: white; font-size: 16px;">View</button>
+            <button style="background-color: green; color: white; font-size: 16px;">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1662380683642-1c4ee212ce9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNyb2NzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Product 3">
+            <h3>Crocs</h3>
+            <p>Crocs is a globally recognized footwear brand known for its distinctive, comfortable, and lightweight clog-style shoes made from proprietary Croslite material, appealing to a wide range of fashion sensibilities and practical needs.</p>
+            <p class="price">Rs-309</p>
+            <button style="background-color: #24a0ed; color: white; font-size: 16px;">View</button>
+            <button style="background-color:green; color: white; font-size: 16px;">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
